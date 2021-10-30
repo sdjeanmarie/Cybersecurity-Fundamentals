@@ -1,1 +1,61 @@
-
+#Command to inspect permissions: 
+ls -lah shadow
+#Command to set permissions (if needed):
+sudo chmod 600 shadow
+#Command to inspect permissions:
+ls -lah gshadow
+#Command to inspect permissions:
+ls -lah group
+#Command to set permissions (if needed):
+sudo chmod 644 group
+#Command to inspect permissions:
+ls -lah passwd
+#Command to set permissions (if needed):
+sudo chmod 644 passwd
+#Command to add each user account (include all five users):
+cd / adduser sam
+cd /adduser joe
+cd /adduser amy
+cd /adduser sara
+cd /adduser admin
+#Command to add `admin` to the `sudo` group:
+sudo usermod -aG sudo admin
+#Command to add group: 
+groupadd engineers
+#Command to add users to `engineers` group (include all four users):
+sudo usermod -a -G engineers sam
+sudo usermod -a -G engineers joe
+sudo usermod -a -G engineers amy
+sudo usermod -a -G engineers sara
+#Command to create the shared folder:
+sudo mkdir -p /home/engineers
+#Command to change ownership of engineer's shared folder to engineer group:
+sudo chgrp engineers /home/engineers
+#Command to install Lynis: 
+sudo apt-get install -y lynis
+#Command to see documentation and instructions: 
+man lynis
+#Command to run an audit: 
+sudo lynis audit system
+#Command to install chkrootkit: 
+sudo apt-get install -y chrootkit
+#Command to see documentation and instructions:
+man chrootkit
+#Command to run expert mode:
+chrootkit -x
+#Command to generate ssh key:
+ssh-keygen
+#Command to get public key
+cat ~/.ssh/id_rsa.pub
+#Command to find your IP address 
+curl icanhazip.com
+#Command to SSH into machine to get connected to VM
+ssh username@VM-public-IP
+#Command to install docker
+sudo apt install docker io
+#Command to update package list 
+sudo apt-get update 
+#Command to download a docker image on virtal machine  
+sudo docker pull cyberxsecurty/ubuntu:bionic 
+#Command to run the socker image on virtual machine 
+sudo docker run -ti cyberxsecurity/ubuntu:bionic 
