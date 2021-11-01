@@ -1,1 +1,34 @@
+#Command to download ansible file
+sudo docker pull cyberxsecurity/ansible 
+#Command to run ansible file
+sudo docker run -ti cyberxsecurity/ansible bash
+#Command to list the containers that were downloaded 
+sudo docker container list -a 
+#Command to start an existing image/ container
+sudo docker start <insert container name> 
+#Command to create a new container 
+#Command to see what docker is running 
+sudo docker ps 
+#Command to open propmt (gain access inside ansible container)  
+sudo docker attach <insert container name>
+#Command to chnge configuration parameters 
+nano ansible.cfg
+#Command to modify host file
+nano hosts
+#Command to access VM server and check the connectivity 
+ansible webservers -m ping 
+#Command to create/ write ansible playbook file
+nano my-playbook.yml
+#Command to run the ansible playbook file 
+ansible-playbook my-playbook.yml
+#Command to create a template to allow for ssh across all servers 
+nano pentest.yml
+#Command to run pentest.yml
+ansible-playbook pentest.yml
+#Command to check if DWV is installed properly
+curl localhost/setup.php
+#Command to check the status of the docker 
+sudo systemctl status docker
+#Command to install docker 
+sudo apt install docker.io
 
