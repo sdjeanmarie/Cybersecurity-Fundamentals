@@ -31,25 +31,25 @@ curl localhost/setup.php
 sudo systemctl status docker
 #Command to install docker 
 sudo apt install docker.io
-Command
+#Command to install elk
 nano install-elk.yml
-Command
+#Command to run elk
 ansible-plybook install-elk.yml
-Command
+#Command to download the dkpg file 
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
-Command 
+#Command to install the .Deb file 
 sudo dpkg -i filebeat-7.6.1-amd64.deb
-Command
+#Command to run the template for the filebeat configuration
 curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
-Command
+#Command to write/creat the filebeat playbook
 nano filebeat-playbook.yml
-Command 
+#Command to write/creat the filebeat config
 nano filebeat-config.yml
-Command
+#Command to run the filebeat playbook
 ansible-playbook filebeat-playbook.yml
-Command 
+#Command to copy the filebeat playbook in a file 
 cp filebeat-config.yml files
-Command 
+#Command to write/ create metricbeat playbook
 nano metricbeat-playbook.yml
-Command 
+#Command to run the metricbeat playbook
 ansible-playbook metricbeat-playbook.yml
