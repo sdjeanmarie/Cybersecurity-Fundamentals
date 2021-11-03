@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - ansible-playbook install-elk.yml ansible-playbook filebeat-playbook.yml, ansible-playbook metribeat-playbook.yml
 
@@ -63,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible? Ansible automation helps with the IAC and it also gives easy to read automation languge 
+-What is the main advantage of automating configuration with Ansible? Ansible automation helps with the IAC and it also gives easy to read automation languge 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -96,7 +96,7 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? ansible-playbook Filebeat-playbook.yml Where do you copy it? Copy it from 
-- _Which file do you update to make Ansible run the playbook on a specific machine? You will update the nano filebeat-playbook.yml and the nano filebeat-config.yml How do I specify which machine to install the ELK server on versus which to install Filebeat on? You will install the Elk server on the 
+- _Which file do you update to make Ansible run the playbook on a specific machine? You will update the nano filebeat-playbook.yml and the nano filebeat-config.yml How do I specify which machine to install the ELK server on versus which to install Filebeat on? You will install the Elk server on the Elk stack machine whereas the filebeat woud be install using the jumpbox machine 
 - _Which URL do you navigate to in order to check that the ELK server is running? http://23.99.177.217:5601/app/kibana#/home/tutorial_directory/logging
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
