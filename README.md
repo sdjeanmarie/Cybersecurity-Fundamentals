@@ -67,12 +67,16 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- First you want to open up the container used to SSH into the server
+- You will then start the container and attach it 
+- Once you get your SSH key you will then use that to log into your machine from the Virtual machine 
+- Once you are connected to the virtual machines you will then write the playbook for the Elk.yml file.
+- Once the Elk playbook is created the ansible-playbook install-elk.yml will be ran to connect to the ELK server 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+[The docker ps output file](<img width="1792" alt="Screen Shot 2021-11-02 at 9 55 51 PM" src="https://user-images.githubusercontent.com/85133932/140000175-c6273dc9-3897-4c12-97b1-402badd399e0.png">)
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -95,7 +99,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? ansible-playbook Filebeat-playbook.yml Where do you copy it? Copy it from 
+- _Which file is the playbook? ansible-playbook Filebeat-playbook.yml Where do you copy it? The file was copied from elastic.co
 - _Which file do you update to make Ansible run the playbook on a specific machine? You will update the nano filebeat-playbook.yml and the nano filebeat-config.yml How do I specify which machine to install the ELK server on versus which to install Filebeat on? You will install the Elk server on the Elk stack machine whereas the filebeat woud be install using the jumpbox machine 
 - _Which URL do you navigate to in order to check that the ELK server is running? http://23.99.177.217:5601/app/kibana#/home/tutorial_directory/logging
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
