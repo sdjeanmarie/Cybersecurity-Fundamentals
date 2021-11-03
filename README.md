@@ -4,7 +4,7 @@ Linux, Diagrams, and Ansible
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![Virtual Machine for Elk Server](https://go.gliffy.com/go/html5/13568300)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -36,10 +36,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+|Webserver1| SSH      | 10.0.0.5   | Linux            |
+|Webserver2| SSH      | 10.0.0.6   | Linux            |
+|Elk Server| SSH      | 10.1.0.5   | Linux            |
 
 ### Access Policies
 
