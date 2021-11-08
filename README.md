@@ -4,8 +4,8 @@ Linux, Diagrams, and Ansible
 
 The files in this repository were used to configure the network depicted below.
 
-![Virtual Machine for Elk Server](https://drive.google.com/file/d/1pM2n5yP3j7d3UVtHTCKwpP0tOBvhQGH9/view?usp=sharing) 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
+ https://github.com/sdjeanmarie/Cybersecurity-Fundamentals
+ These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible-playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - ansible-playbook install-elk.yml ansible-playbook filebeat-playbook.yml, ansible-playbook metribeat-playbook.yml
 
